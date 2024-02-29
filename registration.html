@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url('img11.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+
+}
+
+h1 {
+        text-align: center;
+        font-family: Facon, sans-serif;
+        font-size: 40px; 
+        margin: 0px 0px 0px 0px;   
+        color: #F42323;
+    }
+
+h2 {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 18px;  
+        color: #000000; 
+    }
+text{
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 16px;  
+        color: #000000; 
+    }
+
+    p {
+        font-family: Poppins, sans-serif;
+        font-size: 10px;
+    }
+* {box-sizing: border-box;} 
+
+.form-container {
+  max-width: 600px;
+  padding: 40px;
+  display: block;
+  border-radius: 16px;
+  margin: 20px 0px  25px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 38%;
+  background-color: rgb(255, 255, 255);
+}
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 18px;
+  border-radius: 10px;
+  margin: 10px 0px 2% 0px;
+  border: none;
+  background: #D9D9D9;
+}
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #c0bfbf;
+   border-radius: 10px;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #f42323 ;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .createaccount {
+  background-color: red;
+  font-size: 12px;
+}
+
+.form-container .btn:hover, .open-button:hover 
+{  opacity: 1;}
+
+
+
+
+</style>
+</head>
+<body>
+    
+   
+        
+
+<div class="form-popup" id="register form">
+  <form action="registration" class="form-container">
+    <h1>PG</h1>
+    <h2>Create your PG account</h2>
+    <text><center>Already have an account? <u>Sign in.</u></center></text>
+
+    <label for="email"></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"></label>
+    <input type="password" placeholder="Password" name="psw" required>
+    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+    
+
+    <p>By clicking 'Create account', you agree to the <b>Terms of Use</b> and you acknowledge that 
+        you have read our <b>Privacy Policy</b>. You further acknowledge that PG affiliates may use
+         your email address for marketing, ads and other offers.</p>
+
+    <button type="crt ac" class="btn"><b>Create Account</b></button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
